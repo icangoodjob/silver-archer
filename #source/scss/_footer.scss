@@ -1,0 +1,97 @@
+@use "sass:math";
+.footer {
+	background: #FF5A24;
+	padding: 31px 0 45px 0;
+}
+.footer__container {}
+.footer__inner {}
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 42px;
+}
+.footer__logo {}
+.logo-adaptive{
+	display: none;
+}
+.footer__menu {
+	padding: 70px 0 0 0;
+}
+.footer-menu {}
+.footer-menu__list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	& li:not(:last-child){
+		@include adaptiv-value("margin-right", 84, 20, 0);
+	}
+}
+.footer-menu__item{
+	display: flex;
+	align-items: center;
+}
+.footer-menu__link {
+	font-size: 18px;
+	line-height: math.div(23, 18) * 100%;
+	color: #fff;
+	letter-spacing: 1.6px;
+	&:hover{
+		text-decoration: underline;
+		transition: all .3s;
+	}
+}
+.footer-menu__link--icon {
+	margin: 0 11px 0 0;
+}
+.footer__bottom {
+	display: flex;
+	align-items: center;
+}
+.footer__copy {
+	font-size: 17px;
+	line-height: math.div(21, 18) * 100%;
+	color: #fff;
+	letter-spacing: 1.8px;
+}
+.footer__info {
+	margin-left: auto;
+	color: #fff;
+}
+.footer__map {
+	color: inherit;
+	display: inline-block;
+	justify-content: flex-end;
+	display: flex;
+	text-decoration: underline;
+	margin: 0 0 9px 0;
+	letter-spacing: 1.7px;
+}
+.footer__support {}
+.footer-support {
+	font-size: 17px;
+	line-height: math.div(21, 17) * 100%;
+}
+.footer-support__text {
+	font-weight: 400;
+	letter-spacing: 1.6px;
+}
+.footer-support__email {
+	color: inherit;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+}
+.footer__social {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 35px;
+}
+.footer-social {
+
+}
+.footer-social__link {
+	display: inline-block;
+}
+.footer-social__link:not(:last-child){
+	margin: 0 35px 0 0;
+}
